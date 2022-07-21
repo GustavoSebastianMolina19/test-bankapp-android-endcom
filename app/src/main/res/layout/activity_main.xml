@@ -1,11 +1,55 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/RvSaldos"
+        android:layout_width="match_parent"
+        android:layout_height="116dp"
+        android:orientation="horizontal"
+        />
 
+    <Button
+        android:id="@+id/btnAgragarTarjeta"
+        style="@style/Widget.MaterialComponents.Button.TextButton.Icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/RvSaldos"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="58dp"
+        android:text="agregar una tarjeta de credito o debito"
+        android:textColor="@color/Texto"
+        android:textSize="10dp"
+        app:icon="@drawable/ic_baseline_add_24"
+        app:iconTint="@color/Texto" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/RvTarjetas"
+        android:layout_width="match_parent"
+        android:layout_height="299dp"
+        android:layout_below="@+id/btnAgragarTarjeta"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="0dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/RvMovimientos"
+        android:layout_width="411dp"
+        android:layout_height="216dp"
+        android:layout_below="@+id/RvTarjetas"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="-1dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="6dp"
+        android:orientation="horizontal" />
+
+</RelativeLayout>
