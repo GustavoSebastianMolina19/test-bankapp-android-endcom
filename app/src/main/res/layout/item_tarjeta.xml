@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        >
+
+        <ImageView
+            android:id="@+id/Ivtarjeta"
+            android:layout_width="0dp"
+            android:layout_weight="0.2"
+            android:layout_height="match_parent"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="0.48"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/tvActiva"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Activa"
+                android:textColor="@color/principal"
+                />
+            <TextView
+                android:id="@+id/tvNumeroTarjeta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="5555 5555 5555 5555"/>
+
+            <TextView
+                android:id="@+id/tvNombreTarjeta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="gustavo sebastina molina"
+                />
+            <TextView
+                android:id="@+id/tvTitular"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Titular"/>
+
+        </LinearLayout>
+        <TextView
+            android:id="@+id/tvSaldo"
+            android:layout_width="0dp"
+            android:layout_weight="0.33"
+            android:layout_height="match_parent"
+            android:text="$3233.2"/>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
